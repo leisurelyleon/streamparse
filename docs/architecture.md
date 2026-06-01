@@ -6,9 +6,9 @@ that processes byte streams in bounded memory.
 ## Crates
 
 ```text
-streamparse-core the engine: buffer, zero-copy tokenizer, Format trait,
-StreamParser streamparse-formats concrete formats: NDJSON and delimited (CSV-like)
-streamparse-cli the streamparse binary (parse / stats over files or stdin)
+streamparse-core the engine: buffer, zero-copy tokenizer, Format trait, StreamParser
+streamparse-formats concrete formats: NDJSON and delimited (CSV-like) streamparse-cli
+the streamparse binary (parse / stats over files or stdin)
 ```
 
 ## The push-based model
