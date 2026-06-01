@@ -1,0 +1,12 @@
+[package]
+name = "streamparse-core"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+authors.workspace = true
+repository.workspace = true
+description = "Push-based incremental parser engine for streamparse (no I/O)."
+
+[dependencies]
+thiserror.workspace = true
