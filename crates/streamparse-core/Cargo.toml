@@ -10,3 +10,10 @@ description = "Push-based incremental parser engine for streamparse (no I/O)."
 
 [dependencies]
 thiserror.workspace = true
+
+[dev-dependencies]
+criterion = "0.5"
+
+[[bench]]
+name = "throughput"
+harness = false
