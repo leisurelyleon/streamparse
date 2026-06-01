@@ -14,8 +14,8 @@ impl Format for Ndjson {
 
     fn parse_record(&self, record: &[u8], index: u64) -> Result<ParseEvent, CoreError> {
         let trimmed = trim(record);
-        let value: serde_json::Value = serde_json::from_slice(trimmed)
-            .map_err(|err| CoreError::InvalidRecord {
+        let value: serde_json::Value =
+            serde_json::from_slice(trimmed).map_err(|err| CoreError::InvalidRecord {
                 index,
                 message: err.to_string(),
             })?;

@@ -13,7 +13,7 @@ pub mod format;
 pub mod parser;
 pub mod tokenizer;
 
-pub use buffer::{StreamBuffer, DEFAULT_MAX_RECORD_SIZE};
+pub use buffer::{DEFAULT_MAX_RECORD_SIZE, StreamBuffer};
 pub use error::CoreError;
 pub use event::{ParseEvent, RecordPayload};
 pub use format::Format;

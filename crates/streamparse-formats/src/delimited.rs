@@ -50,7 +50,10 @@ mod tests {
         assert_eq!(events.len(), 1);
         match &events[0].payload {
             RecordPayload::Fields(fields) => {
-                assert_eq!(fields, &vec!["a".to_string(), "b".to_string(), "c".to_string()]);
+                assert_eq!(
+                    fields,
+                    &vec!["a".to_string(), "b".to_string(), "c".to_string()]
+                );
             }
             RecordPayload::Json(_) => panic!("expected fields payload"),
         }

@@ -1,6 +1,6 @@
 //! The push-based incremental parser.
 
-use crate::buffer::{StreamBuffer, DEFAULT_MAX_RECORD_SIZE};
+use crate::buffer::{DEFAULT_MAX_RECORD_SIZE, StreamBuffer};
 use crate::error::CoreError;
 use crate::event::ParseEvent;
 use crate::format::Format;

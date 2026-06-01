@@ -35,7 +35,10 @@ fn delimited_reassembles_under_single_byte_feeds() {
     assert_eq!(events.len(), 2);
     match &events[1].payload {
         RecordPayload::Fields(fields) => {
-            assert_eq!(fields, &vec!["d".to_string(), "e".to_string(), "f".to_string()]);
+            assert_eq!(
+                fields,
+                &vec!["d".to_string(), "e".to_string(), "f".to_string()]
+            );
         }
         RecordPayload::Json(_) => panic!("expected fields payload"),
     }
